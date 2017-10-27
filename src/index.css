@@ -1,0 +1,104 @@
+html,
+body,
+.wrapper,
+#root {
+  height: 100%;
+  background: linear-gradient(225deg, #0068B9, #0075D7 50%, #2DABEE);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  cursor: default;
+}
+
+h1,
+h2 {
+  font-family: "Days One", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  white-space: pre-line;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  perspective: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  z-index: 2;
+  user-select: none;
+  width: 38vw;
+  height: 28vw;
+  margin: 0 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  opacity: 1;
+  transform: translate(0) rotate3d(0) scale(1);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+  /*background: red;*/
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.card:nth-of-type(3) {
+  background: url(https://seattle.eat24hours.com/files/cuisines/v4/pizza.jpg) no-repeat center/cover;
+  justify-content: space-between;
+}
+
+.card:nth-of-type(2) {
+  background: url(http://img.taste.com.au/_YKHzE3u/taste/2016/11/pumpkin-and-chive-soup-75984-1.jpeg) no-repeat center/cover;
+}
+
+.card:nth-of-type(1) {
+  background: url(https://www.panerabread.com/foundation/menu/details/greek-salad-whole.jpg/_jcr_content/renditions/greek-salad-whole.desktop.jpeg) no-repeat center/cover;
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+.card-top,
+.card-bottom {
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card-top {
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-top h1 {
+  font-size: 4em;
+}
+
+.card-bottom {
+  height: 14vw;
+  background-color: #fff;
+  color: darken(rebeccapurple, 20%);
+  text-align: center;
+  align-items: center;
+}
+
+.card-bottom p {
+  margin-top: 20px;
+}
