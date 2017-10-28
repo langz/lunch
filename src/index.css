@@ -56,16 +56,15 @@ p {
 }
 
 .card:nth-of-type(3) {
-  background: url(https://seattle.eat24hours.com/files/cuisines/v4/pizza.jpg) no-repeat center/cover;
-  justify-content: space-between;
-}
-
-.card:nth-of-type(2) {
   background: url(http://img.taste.com.au/_YKHzE3u/taste/2016/11/pumpkin-and-chive-soup-75984-1.jpeg) no-repeat center/cover;
 }
 
-.card:nth-of-type(1) {
+.card:nth-of-type(2) {
   background: url(https://www.panerabread.com/foundation/menu/details/greek-salad-whole.jpg/_jcr_content/renditions/greek-salad-whole.desktop.jpeg) no-repeat center/cover;
+}
+
+.card:nth-of-type(1) {
+  background: url(https://seattle.eat24hours.com/files/cuisines/v4/pizza.jpg) no-repeat center/cover;
 }
 
 .card:hover {
