@@ -1,22 +1,35 @@
 import axios from 'axios';
 let ax = axios.create({
-  baseURL: 'http://lunch-menu.herokuapp.com/parse/classes/Menu',
+  baseURL: 'https://lunch-menu.herokuapp.com/parse/classes/Menu',
   timeout: 1000,
   headers: {
     'X-Parse-Application-Id': 'nAixMGyDvVeNfeWEectyJrvtqSeKregQs2gLh9Aw'
   }
 });
+
+// let today = new Date().toISOString().substring(0, 10);
+// let tomorrow = new Date();
+// tomorrow.setDate(new Date().getDate() + 1);
+// tomorrow = tomorrow.toISOString().substring(0, 10);
+
+// console.log(today);
+// console.log(tomorrow);
+
+let today = '2017-10-19 00:00:00';
+let tomorrow = '2017-10-20 00:00:00';
+
+
 ax.getLunchForToday = function () {
   return ax.post('', {
     'where': {
       'date': {
         '$gte': {
           '__type': 'Date',
-          'iso': '2017-10-19 00:00:00'
+          'iso': today
         },
         '$lte': {
           '__type': 'Date',
-          'iso': '2017-10-20 00:00:00'
+          'iso': tomorrow
         }
       },
     },

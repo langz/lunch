@@ -4,6 +4,7 @@ body,
 #root {
   height: 100%;
   background: linear-gradient(225deg, #0068B9, #0075D7 50%, #2DABEE);
+  overflow: hidden;
 }
 
 body {
@@ -14,7 +15,6 @@ h1,
 h2,
 p {
   margin: 0;
-  cursor: default;
 }
 
 h1,
@@ -42,9 +42,9 @@ p {
 .card {
   z-index: 2;
   user-select: none;
-  width: 38vw;
+  width: 20vw;
   height: 28vw;
-  margin: 0 30px;
+  margin: 0 40px;
   display: flex;
   flex-flow: column nowrap;
   opacity: 1;
@@ -100,5 +100,6 @@ p {
 }
 
 .card-bottom p {
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 1.2em;
 }
