@@ -63,7 +63,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('render')
     return (
       <Tiles items={this.state.restaurants} />
     );

@@ -7,10 +7,11 @@ let ax = axios.create({
   }
 });
 
-// let today = new Date().toISOString().substring(0, 10);
 // let tomorrowDate = new Date();
 // tomorrowDate.setDate(new Date().getDate() + 1);
+
 // let tomorrow = tomorrowDate.toISOString().substring(0, 10);
+// let today = new Date().toISOString().substring(0, 10);
 
 // console.log(today);
 // console.log(tomorrow);

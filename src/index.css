@@ -102,3 +102,8 @@ p {
   margin-top: 40px;
   font-size: 1.2em;
 }
+
+.card-bottom h2 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
