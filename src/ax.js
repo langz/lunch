@@ -7,18 +7,11 @@ let ax = axios.create({
   }
 });
 
-// let tomorrowDate = new Date();
-// tomorrowDate.setDate(new Date().getDate() + 1);
+let tomorrowDate = new Date();
+tomorrowDate.setDate(new Date().getDate() + 1);
 
-// let tomorrow = tomorrowDate.toISOString().substring(0, 10);
-// let today = new Date().toISOString().substring(0, 10);
-
-// console.log(today);
-// console.log(tomorrow);
-
-let today = '2017-10-19 00:00:00';
-let tomorrow = '2017-10-20 00:00:00';
-
+let tomorrow = tomorrowDate.toISOString().substring(0, 10);
+let today = new Date().toISOString().substring(0, 10);
 
 ax.getLunchForToday = function () {
   return ax.post('', {
